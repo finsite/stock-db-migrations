@@ -1,8 +1,8 @@
 ---
-site_name: Template Python
-site_description: Documentation for the Template Python Project
+site_name: Stock Db Migrations
+site_description: Documentation for the Stock Db Migrations Project
 site_author: Mark Quinn
-repo_url: https://github.com/finsite/template_python
+repo_url: https://github.com/finsite/stock-db-migrations
 theme:
   name: material
 nav:
