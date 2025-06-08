@@ -16,7 +16,7 @@ spec:
         app: stock-db-migrations
     spec:
       containers:
-      - name: stock-db-migrations
-        image: stock-db-migrations:latest
-        ports:
-        - containerPort: 8080
+        - name: stock-db-migrations
+          image: stock-db-migrations:latest
+          ports:
+            - containerPort: 8080
