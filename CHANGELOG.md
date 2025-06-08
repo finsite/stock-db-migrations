@@ -7,6 +7,12 @@
 - Initial project structure cloned from `template_python`
 - Custom configuration and module setup for `stock-db-migrations`
 
+## v0.2.2 (2025-06-08)
+
+### Fix
+
+- **types**: resolve all Pyright issues and sync output handler signature
+
 ## v0.2.1 (2025-06-05)
 
 ### Fix
