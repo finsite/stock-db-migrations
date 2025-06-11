@@ -7,6 +7,12 @@
 - Initial project structure cloned from `template_python`
 - Custom configuration and module setup for `stock-db-migrations`
 
+## v0.2.3 (2025-06-11)
+
+### Refactor
+
+- standardize config, vault client, and test structure across all repos
+
 ## v0.2.2 (2025-06-08)
 
 ### Fix
