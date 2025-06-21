@@ -318,6 +318,8 @@ readme-renderer==44.0
     # via twine
 requests==2.32.4
     # via
+    #   -r D:\git\stock-db-migrations\requirements.in
+    #   -r requirements-dev.in
     #   id
     #   mkdocs-material
     #   requests-toolbelt
@@ -383,8 +385,10 @@ typing-inspection==0.4.1
     #   pydantic-settings
 tzdata==2025.2
     # via pandas
-urllib3==2.4.0
+urllib3==2.5.0
     # via
+    #   -r D:\git\stock-db-migrations\requirements.in
+    #   -r requirements-dev.in
     #   botocore
     #   influxdb-client
     #   requests
