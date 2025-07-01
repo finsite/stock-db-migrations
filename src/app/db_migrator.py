@@ -1,10 +1,11 @@
 """Handles writing to Postgres and InfluxDB, with optional dry-run mode."""
 
-import os
 from typing import Any
+
 import psycopg2
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
+
 from app.config_shared import get_config_value
 from app.utils.setup_logger import setup_logger
 
@@ -14,6 +15,7 @@ DRY_RUN = get_config_value("DRY_RUN", "false").lower() == "true"
 # -------------------------------
 # PostgreSQL Writer
 # -------------------------------
+
 
 def write_to_postgres(data: dict[str, Any]) -> None:
     """Write a single row to PostgreSQL or log it in dry-run mode."""
@@ -40,12 +42,14 @@ def write_to_postgres(data: dict[str, Any]) -> None:
     except Exception as e:
         logger.exception("❌ Error writing to PostgreSQL: %s", e)
     finally:
-        if 'conn' in locals():
+        if "conn" in locals():
             conn.close()
+
 
 # -------------------------------
 # InfluxDB Writer
 # -------------------------------
+
 
 def write_to_influx(data: dict[str, Any]) -> None:
     """Write a single row to InfluxDB or log it in dry-run mode."""
